@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Example</title>
+</head>
+<body>
+
+<h2>HTML Table Example with rowspan and colspan</h2>
+
+<table border="2">
+  <!-- Table Header Row -->
+  <tr>
+    <th>Sr. No.</th>
+    <th>Name</th>
+    <th colspan="2">Contact Details</th> <!-- colspan to merge two columns -->
+  </tr>
+
+  <!-- Table Row with rowspan -->
+  <tr>
+    <td rowspan="2">1</td> <!-- rowspan to span two rows -->
+    <td>John Doe</td>
+    <td>Email</td>
+    <td>john@example.com</td>
+  </tr>
+
+  <tr>
+    <!-- Sr. No. cell is merged above -->
+    <td>Phone</td>
+    <td>123-456-7890</td>
+  </tr>
+
+  <!-- Normal row -->
+  <tr>
+    <td>2</td>
+    <td>Jane Smith</td>
+    <td>Email</td>
+    <td>jane@example.com</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
