@@ -1,65 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Timetable Example</title>
+    <meta charset="UTF-8" />
+    <title>B.Tech(IT) Semester V Timetable - Room 16109</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 2px solid #000;
+            padding: 8px 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .legend {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        .break-row td {
+            background-color: #ffeeba;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Class Timetable</h2>
+<h1>B.Tech(IT) Semester V Timetable</h1>
+<p><strong>Room No:</strong> 16109 &nbsp;&nbsp; <strong>Effective from:</strong> 14-07-2025</p>
 
-<table border="2" cellspacing="5" cellpadding="10" style="border-collapse: separate;">
-  <caption><strong>Weekly Class Timetable</strong></caption>
-  
-  <!-- Table Header Row -->
-  <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  
-  <!-- 1st Time Slot -->
-  <tr>
-    <td>9:00 AM - 10:00 AM</td>
-    <td>Math</td>
-    <td rowspan="2">Physics</td> <!-- rowspan: Physics class for two hours -->
-    <td>English</td>
-    <td>History</td>
-    <td>Computer Science</td>
-  </tr>
-  
-  <!-- 2nd Time Slot -->
-  <tr>
-    <td>10:00 AM - 11:00 AM</td>
-    <td>Biology</td>
-    <!-- Physics cell merged above -->
-    <td>Geography</td>
-    <td>Math</td>
-    <td>Physical Education</td>
-  </tr>
-  
-  <!-- 3rd Time Slot -->
-  <tr>
-    <td>11:00 AM - 12:00 PM</td>
-    <td colspan="2">Assembly</td> <!-- colspan: Assembly spans Monday and Tuesday -->
-    <td>Computer Lab</td>
-    <td>English</td>
-    <td>Art</td>
-  </tr>
-  
-  <!-- 4th Time Slot -->
-  <tr>
-    <td>12:00 PM - 1:00 PM</td>
-    <td>Chemistry</td>
-    <td>Math</td>
-    <td>History</td>
-    <td>Biology</td>
-    <td>Music</td>
-  </tr>
-  
+<table border="2" cellspacing="5" cellpadding="10">
+    <caption>Class Timetable (Section: A)</caption>
+    <tr>
+        <th>Day / Time</th>
+        <th>09:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-11:10<br />(Break)</th>
+        <th>11:10-12:10</th>
+        <th>12:10-01:10</th>
+        <th>01:10-02:10</th>
+        <th>02:10-03:10</th>
+        <th>03:10-04:30</th>
+    </tr>
+    
+    <tr>
+        <td>Monday</td>
+        <td>AT&amp;CD</td>
+        <td>DWDM</td>
+        <td rowspan="6" class="break-row">Break</td> <!-- Break spans all days -->
+        <td>AOR</td>
+        <td>AJ</td>
+        <td colspan="2"> - </td> <!-- No classes scheduled in these slots -->
+        <td>AJ Lab</td>
+    </tr>
+    
+    <tr>
+        <td>Tuesday</td>
+        <td>CN</td>
+        <td>TPL</td>
+        <td>DWDM</td>
+        <td>AOR</td>
+        <td>AT&amp;CD</td>
+        <td>AJ</td>
+        <td> - </td>
+    </tr>
+    
+    <tr>
+        <td>Wednesday</td>
+        <td>AJ</td>
+        <td>CN</td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+    </tr>
+    
+    <tr>
+        <td>Thursday</td>
+        <td>AOR</td>
+        <td>AT&amp;CD</td>
+        <td>AJ</td>
+        <td>CN</td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+    </tr>
+    
+    <tr>
+        <td>Friday</td>
+        <td>DWDM</td>
+        <td>CN</td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+    </tr>
+    
+    <tr>
+        <td>Saturday</td>
+        <td>AOR</td>
+        <td>FST</td>
+        <td>DWDM</td>
+        <td>AT&amp;CD</td>
+        <td colspan="3"> - </td>
+    </tr>
 </table>
+
+<!-- Legend for subjects -->
+<div class="legend">
+    <h3>Subject Codes:</h3>
+    <ul>
+        <li><strong>23ITITT5010:</strong> Advanced Java (AJ)</li>
+        <li><strong>23ITITT5020:</strong> Computer Networks (CN)</li>
+        <li><strong>23ITITT5030:</strong> Automata Theory &amp; Compiler Design (AT&amp;CD)</li>
+        <li><strong>23ITITP504E:</strong> Data Warehousing &amp; Data Mining (DWDM)</li>
+        <li><strong>23ITMEO505B:</strong> Applied Operations Research (AOR)</li>
+        <li><strong>Lab Subjects:</strong></li>
+        <ul>
+            <li>AJ Lab - Advanced Java Lab</li>
+            <li>CN Lab - Computer Networks Lab</li>
+            <li>UI Lab - User Interface Design using Flutter Lab</li>
+            <li>FSD Lab - Functional Software Design Lab</li>
+        </ul>
+    </ul>
+</div>
+
+<!-- Additional Information -->
+<div>
+    <p><strong>Technical Practice Lab Instructor:</strong> Mr. M Thangamani</p>
+    <p><strong>Academic Year:</strong> 2025 - 2026</p>
+</div>
 
 </body>
 </html>
