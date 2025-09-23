@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timetable Example</title>
+</head>
+<body>
+
+<h2>Class Timetable</h2>
+
+<table border="2" cellspacing="5" cellpadding="10" style="border-collapse: separate;">
+  <caption><strong>Weekly Class Timetable</strong></caption>
+  
+  <!-- Table Header Row -->
+  <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  
+  <!-- 1st Time Slot -->
+  <tr>
+    <td>9:00 AM - 10:00 AM</td>
+    <td>Math</td>
+    <td rowspan="2">Physics</td> <!-- rowspan: Physics class for two hours -->
+    <td>English</td>
+    <td>History</td>
+    <td>Computer Science</td>
+  </tr>
+  
+  <!-- 2nd Time Slot -->
+  <tr>
+    <td>10:00 AM - 11:00 AM</td>
+    <td>Biology</td>
+    <!-- Physics cell merged above -->
+    <td>Geography</td>
+    <td>Math</td>
+    <td>Physical Education</td>
+  </tr>
+  
+  <!-- 3rd Time Slot -->
+  <tr>
+    <td>11:00 AM - 12:00 PM</td>
+    <td colspan="2">Assembly</td> <!-- colspan: Assembly spans Monday and Tuesday -->
+    <td>Computer Lab</td>
+    <td>English</td>
+    <td>Art</td>
+  </tr>
+  
+  <!-- 4th Time Slot -->
+  <tr>
+    <td>12:00 PM - 1:00 PM</td>
+    <td>Chemistry</td>
+    <td>Math</td>
+    <td>History</td>
+    <td>Biology</td>
+    <td>Music</td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
